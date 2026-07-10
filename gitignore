@@ -1,9 +1,0 @@
-# إخفاء ملفات إعدادات Firebase الحساسة
-firebase-config.js
-
-# إخفاء مجلدات البيئة المحلية
-node_modules/
-.env
-
-# إخفاء ملفات النظام المزعجة
-.DS_Store
