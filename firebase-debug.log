@@ -1,0 +1,115 @@
+[debug] [2026-07-10T22:29:58.268Z] ----------------------------------------------------------------------
+[debug] [2026-07-10T22:29:58.275Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alhady\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-07-10T22:29:58.275Z] CLI Version:   15.22.4
+[debug] [2026-07-10T22:29:58.276Z] Platform:      win32
+[debug] [2026-07-10T22:29:58.276Z] Node Version:  v24.18.0
+[debug] [2026-07-10T22:29:58.276Z] Detected Agent: unknown
+[debug] [2026-07-10T22:29:58.277Z] Time:          Sat Jul 11 2026 01:29:58 GMT+0300 (توقيت شرق أوروبا الصيفي)
+[debug] [2026-07-10T22:29:58.277Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-10T22:30:01.841Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-10T22:30:01.842Z] > authorizing via signed-in user (m2hm23@yahoo.com)
+[debug] [2026-07-10T22:30:01.842Z] [iam] checking project satellite-archaeology-5078d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-10T22:30:01.844Z] Checked if tokens are valid: false, expires at: 1783714797859
+[debug] [2026-07-10T22:30:01.845Z] Checked if tokens are valid: false, expires at: 1783714797859
+[debug] [2026-07-10T22:30:01.845Z] > refreshing access token with scopes: []
+[debug] [2026-07-10T22:30:02.012Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-07-10T22:30:02.012Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-10T22:30:03.428Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-07-10T22:30:03.428Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-10T22:30:03.496Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/satellite-archaeology-5078d:testIamPermissions [none]
+[debug] [2026-07-10T22:30:03.496Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/satellite-archaeology-5078d:testIamPermissions  x-goog-user-project=satellite-archaeology-5078d
+[debug] [2026-07-10T22:30:03.496Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satellite-archaeology-5078d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-10T22:30:05.128Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/satellite-archaeology-5078d:testIamPermissions 200
+[debug] [2026-07-10T22:30:05.128Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/satellite-archaeology-5078d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-10T22:30:05.129Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:05.129Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:05.150Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/satellite-archaeology-5078d [none]
+[debug] [2026-07-10T22:30:05.955Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/satellite-archaeology-5078d 200
+[debug] [2026-07-10T22:30:05.956Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/satellite-archaeology-5078d {"projectId":"satellite-archaeology-5078d","projectNumber":"614439406772","displayName":"Satellite Archaeology","name":"projects/satellite-archaeology-5078d","resources":{"hostingSite":"satellite-archaeology-5078d","realtimeDatabaseInstance":"satellite-archaeology-5078d-default-rtdb"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_45edfaa8-3813-486e-b503-47d4d576ff3b"}
+[info] 
+[info] === Deploying to 'satellite-archaeology-5078d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-07-10T22:30:05.971Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:05.972Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:05.972Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/satellite-archaeology-5078d/sites/satellite-archaeology-5078d [none]
+[debug] [2026-07-10T22:30:07.632Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/satellite-archaeology-5078d/sites/satellite-archaeology-5078d 200
+[debug] [2026-07-10T22:30:07.632Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/satellite-archaeology-5078d/sites/satellite-archaeology-5078d {"name":"projects/satellite-archaeology-5078d/sites/satellite-archaeology-5078d","defaultUrl":"https://satellite-archaeology-5078d.web.app","appId":"1:614439406772:web:2521c50961a245dd4fdbe1","type":"DEFAULT_SITE"}
+[debug] [2026-07-10T22:30:07.637Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:07.637Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:07.638Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/satellite-archaeology-5078d/versions [none]
+[debug] [2026-07-10T22:30:07.638Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/satellite-archaeology-5078d/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-07-10T22:30:10.401Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/satellite-archaeology-5078d/versions 200
+[debug] [2026-07-10T22:30:10.402Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/satellite-archaeology-5078d/versions {"name":"projects/614439406772/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[satellite-archaeology-5078d]: beginning deploy... 
+[info] i  hosting[satellite-archaeology-5078d]: found 33 files in . 
+[debug] [2026-07-10T22:30:10.465Z] [hosting] uploading with 200 concurrency
+[debug] [2026-07-10T22:30:12.247Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:12.247Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:12.269Z] [hosting] hash cache [] stored for 33 files
+[debug] [2026-07-10T22:30:12.269Z] [hosting][hash queue][FINAL] {"max":1763,"min":7,"avg":311.90909090909093,"active":0,"complete":33,"success":33,"errored":0,"retried":0,"total":33,"elapsed":1799}
+[debug] [2026-07-10T22:30:12.270Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/614439406772/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1:populateFiles [none]
+[debug] [2026-07-10T22:30:12.270Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/614439406772/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1:populateFiles {"files":{"/manifest.json":"8a5f9d3de638e65cf81e4ca530bd5e1f020f7da2ed3395854d7a2dae9da7e472","/input.html":"7e54a2b2337a77c13ee0cb158584c718f2a37e6967345b810cc21b70c7fb5c82","/icon.gif":"0546440738910973168bf3b839aa83cdedf7f5009d52be6dfc8eaa56576177e7","/gitignore":"7353cb4a07af72f63b4a23def119edfebcbc99a41b769be0cb8efbd6751ff3fb","/cmd-firebase deploy.txt":"6632cea5fc5cab1ac3305cdd4fea17c359c4701b1298fbb055203f51d33d5541","/site-inspection.html":"6e84fe2c245138a4a9cd83d70f9c79083bafbd59ab5456beae5128da0ee0816c","/sup.html":"0a3e5334a681c1a43dccbb02cfa9b5755e3bfd7cfef064fb6c904bfdf2aceb21","/index.html":"aff44f177e64b6469d512bc2adc8e761ec347d3c91de482abf511b0eb15b96d9","/services.html":"031ec109850d8e593c2430057693d9aa97d0da682d5f114bd80147cad6f66a53","/data-analysis.html":"daa6af64df9809e9685d8e5ac48a2496cc5d9e6cf2e6afd40b802ef97750a092","/admin.html":"f58a42cf6b49a4194d620f941949432308f665df4fb06f299168099536ee11b0","/3d.html":"7454b0551b0535e10aebede14d7a4b907bd04c0a014dfb72188d2f87fc8b2ecd","/001.html":"f1b56ae6be8842a1482c2ad2e7790d1cf5636bb7a04f06c76689fe785b866222","/services.png":"0546440738910973168bf3b839aa83cdedf7f5009d52be6dfc8eaa56576177e7","/icon-1.png":"8ba2ac0e0769ee55b38dca4971d1278a9722fc495f9e5c9cb08b00dfb7505b54","/icon-3.png":"cc2316be4ac4836d6132119cac43580c319916493976b55ed51dd6e8a5b9f777","/back.gif":"525ea4050130d4d1dba94e966e80987ea1568c16e90c606b53ddb6e83b5c2465","/4.gif":"a178ce165ce4f3fe985dbb039cb61385044af7776ce777fb9f6baf8c1778b7a7","/data-analysis.png":"88d1e00396d54a402d75bf8ebd92cd953ca4dbcc98c1f2b08801cacc93d0cc6d","/site-inspection.png":"bb0b948282011907d1553c13122a4f1f0a314c06715c8923b9b0171d7abf4c14","/earth-background.jpg":"316ab5507522a2e252375dee5b87346180ff56ecf0304a8f390b7c2cea1762e6","/55.png":"f70730fcb268fbcc89c33a1a7ecf9a4670669e113b849bc19b0dff94002ca2ba","/sa.gif":"f7723ef8f6bd1e3f3a5180bbb6b04a9ee4d755d042c6b880da1e5b77f233caf7","/1.gif":"f7723ef8f6bd1e3f3a5180bbb6b04a9ee4d755d042c6b880da1e5b77f233caf7","/moving-bg01.gif":"f7723ef8f6bd1e3f3a5180bbb6b04a9ee4d755d042c6b880da1e5b77f233caf7","/2.gif":"f78ef6ecf786a0fd2b7f1f397601d7df5d69bd479e20ddc77192d46fddcbf5dc","/moving-bg.gif":"f78ef6ecf786a0fd2b7f1f397601d7df5d69bd479e20ddc77192d46fddcbf5dc","/icon-2.png":"facd6876a96b9389da9e7c39724ea61ef7e973f49a25a884d0435ca9738e0d9b","/35.gif":"05f52671c86df2b586f39567f4834b622d84fef6c0cac03c3e6e99e05a635ca9","/3.gif":"4745b8d99e8cee1c99e37c145c0e36f2875cf2561e5e3ddf4d8f39d069bc7b76","/1.kmz":"b718cce983cdd0f1e52b10b9dc1e79308dee45d7767ea70b58dad17b68083f99","/order.gif":"c7c9e48456fb05d754e722faf2790fad9e875785dc2cd59ef59a552f9c512ffc","/da.gif":"8a79d68db3e79cd7a61c4a7fb88c074e78c4e24a8a260026acfdbc307e11ebaf"}}
+[debug] [2026-07-10T22:30:13.524Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/614439406772/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1:populateFiles 200
+[debug] [2026-07-10T22:30:13.525Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/614439406772/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1:populateFiles {"uploadRequiredHashes":["facd6876a96b9389da9e7c39724ea61ef7e973f49a25a884d0435ca9738e0d9b","525ea4050130d4d1dba94e966e80987ea1568c16e90c606b53ddb6e83b5c2465","031ec109850d8e593c2430057693d9aa97d0da682d5f114bd80147cad6f66a53","cc2316be4ac4836d6132119cac43580c319916493976b55ed51dd6e8a5b9f777","f1b56ae6be8842a1482c2ad2e7790d1cf5636bb7a04f06c76689fe785b866222","8ba2ac0e0769ee55b38dca4971d1278a9722fc495f9e5c9cb08b00dfb7505b54","8a79d68db3e79cd7a61c4a7fb88c074e78c4e24a8a260026acfdbc307e11ebaf","05f52671c86df2b586f39567f4834b622d84fef6c0cac03c3e6e99e05a635ca9","c7c9e48456fb05d754e722faf2790fad9e875785dc2cd59ef59a552f9c512ffc","6e84fe2c245138a4a9cd83d70f9c79083bafbd59ab5456beae5128da0ee0816c","daa6af64df9809e9685d8e5ac48a2496cc5d9e6cf2e6afd40b802ef97750a092"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files"}
+[debug] [2026-07-10T22:30:13.542Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.542Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.542Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.542Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.543Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.543Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.543Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.543Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.543Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.544Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.544Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.544Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.544Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.544Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.545Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.545Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.545Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.545Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.545Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.545Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.546Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.546Z] Checked if tokens are valid: true, expires at: 1783726202429
+[debug] [2026-07-10T22:30:13.547Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/facd6876a96b9389da9e7c39724ea61ef7e973f49a25a884d0435ca9738e0d9b [none]
+[debug] [2026-07-10T22:30:13.547Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/facd6876a96b9389da9e7c39724ea61ef7e973f49a25a884d0435ca9738e0d9b [stream]
+[debug] [2026-07-10T22:30:13.568Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/525ea4050130d4d1dba94e966e80987ea1568c16e90c606b53ddb6e83b5c2465 [none]
+[debug] [2026-07-10T22:30:13.569Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/525ea4050130d4d1dba94e966e80987ea1568c16e90c606b53ddb6e83b5c2465 [stream]
+[debug] [2026-07-10T22:30:13.571Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/031ec109850d8e593c2430057693d9aa97d0da682d5f114bd80147cad6f66a53 [none]
+[debug] [2026-07-10T22:30:13.571Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/031ec109850d8e593c2430057693d9aa97d0da682d5f114bd80147cad6f66a53 [stream]
+[debug] [2026-07-10T22:30:13.573Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/cc2316be4ac4836d6132119cac43580c319916493976b55ed51dd6e8a5b9f777 [none]
+[debug] [2026-07-10T22:30:13.574Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/cc2316be4ac4836d6132119cac43580c319916493976b55ed51dd6e8a5b9f777 [stream]
+[debug] [2026-07-10T22:30:13.576Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/f1b56ae6be8842a1482c2ad2e7790d1cf5636bb7a04f06c76689fe785b866222 [none]
+[debug] [2026-07-10T22:30:13.576Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/f1b56ae6be8842a1482c2ad2e7790d1cf5636bb7a04f06c76689fe785b866222 [stream]
+[debug] [2026-07-10T22:30:13.577Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/8ba2ac0e0769ee55b38dca4971d1278a9722fc495f9e5c9cb08b00dfb7505b54 [none]
+[debug] [2026-07-10T22:30:13.578Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/8ba2ac0e0769ee55b38dca4971d1278a9722fc495f9e5c9cb08b00dfb7505b54 [stream]
+[debug] [2026-07-10T22:30:13.579Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/8a79d68db3e79cd7a61c4a7fb88c074e78c4e24a8a260026acfdbc307e11ebaf [none]
+[debug] [2026-07-10T22:30:13.579Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/8a79d68db3e79cd7a61c4a7fb88c074e78c4e24a8a260026acfdbc307e11ebaf [stream]
+[debug] [2026-07-10T22:30:13.580Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/05f52671c86df2b586f39567f4834b622d84fef6c0cac03c3e6e99e05a635ca9 [none]
+[debug] [2026-07-10T22:30:13.581Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/05f52671c86df2b586f39567f4834b622d84fef6c0cac03c3e6e99e05a635ca9 [stream]
+[debug] [2026-07-10T22:30:13.582Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/c7c9e48456fb05d754e722faf2790fad9e875785dc2cd59ef59a552f9c512ffc [none]
+[debug] [2026-07-10T22:30:13.582Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/c7c9e48456fb05d754e722faf2790fad9e875785dc2cd59ef59a552f9c512ffc [stream]
+[debug] [2026-07-10T22:30:13.584Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/6e84fe2c245138a4a9cd83d70f9c79083bafbd59ab5456beae5128da0ee0816c [none]
+[debug] [2026-07-10T22:30:13.584Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/6e84fe2c245138a4a9cd83d70f9c79083bafbd59ab5456beae5128da0ee0816c [stream]
+[debug] [2026-07-10T22:30:13.587Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/daa6af64df9809e9685d8e5ac48a2496cc5d9e6cf2e6afd40b802ef97750a092 [none]
+[debug] [2026-07-10T22:30:13.587Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/daa6af64df9809e9685d8e5ac48a2496cc5d9e6cf2e6afd40b802ef97750a092 [stream]
+[debug] [2026-07-10T22:30:13.589Z] [hosting][populate queue][FINAL] {"max":1300,"min":1300,"avg":1300,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1343}
+[debug] [2026-07-10T22:30:13.589Z] [hosting] uploads queued: 11
+[debug] [2026-07-10T22:30:16.871Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/031ec109850d8e593c2430057693d9aa97d0da682d5f114bd80147cad6f66a53 200
+[debug] [2026-07-10T22:30:16.871Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/031ec109850d8e593c2430057693d9aa97d0da682d5f114bd80147cad6f66a53 [stream]
+[debug] [2026-07-10T22:30:16.875Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/daa6af64df9809e9685d8e5ac48a2496cc5d9e6cf2e6afd40b802ef97750a092 200
+[debug] [2026-07-10T22:30:16.875Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/daa6af64df9809e9685d8e5ac48a2496cc5d9e6cf2e6afd40b802ef97750a092 [stream]
+[debug] [2026-07-10T22:30:16.933Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/f1b56ae6be8842a1482c2ad2e7790d1cf5636bb7a04f06c76689fe785b866222 200
+[debug] [2026-07-10T22:30:16.933Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/f1b56ae6be8842a1482c2ad2e7790d1cf5636bb7a04f06c76689fe785b866222 [stream]
+[debug] [2026-07-10T22:30:17.973Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/6e84fe2c245138a4a9cd83d70f9c79083bafbd59ab5456beae5128da0ee0816c 200
+[debug] [2026-07-10T22:30:17.973Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/6e84fe2c245138a4a9cd83d70f9c79083bafbd59ab5456beae5128da0ee0816c [stream]
+[debug] [2026-07-10T22:30:18.194Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/8ba2ac0e0769ee55b38dca4971d1278a9722fc495f9e5c9cb08b00dfb7505b54 200
+[debug] [2026-07-10T22:30:18.194Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/8ba2ac0e0769ee55b38dca4971d1278a9722fc495f9e5c9cb08b00dfb7505b54 [stream]
+[debug] [2026-07-10T22:30:21.441Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/525ea4050130d4d1dba94e966e80987ea1568c16e90c606b53ddb6e83b5c2465 200
+[debug] [2026-07-10T22:30:21.441Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/525ea4050130d4d1dba94e966e80987ea1568c16e90c606b53ddb6e83b5c2465 [stream]
+[debug] [2026-07-10T22:30:22.692Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/cc2316be4ac4836d6132119cac43580c319916493976b55ed51dd6e8a5b9f777 200
+[debug] [2026-07-10T22:30:22.692Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/satellite-archaeology-5078d/versions/a1063ac5c4f16db1/files/cc2316be4ac4836d6132119cac43580c319916493976b55ed51dd6e8a5b9f777 [stream]

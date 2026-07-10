@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Satellite Archaeology Viewer</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: url('back.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-title {
+      font-family: "Times New Roman", serif;
+      font-size: 60px;
+      color: white;
+      margin: 40px 0;
+      position: relative;
+      display: inline-block;
+      padding: 40px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    .main-title a { text-decoration: none; color: inherit; position: relative; z-index: 2; }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px lightblue; }
+      to { text-shadow: 0 0 20px white, 0 0 30px lightblue; }
+    }
+
+    .menu { display: flex; justify-content: center; gap: 80px; margin-bottom: 40px; }
+    
+    /* --- كود الأيقونات والحركة --- */
+    .menu-item { 
+      cursor: pointer; 
+      text-align: center; 
+      border: 3px solid silver; 
+      padding: 20px; 
+      border-radius: 10px; 
+      background-color: rgba(0,0,0,0.3); 
+      width: 180px; 
+      transition: transform 1s, border-color 0.5s; 
+    }
+    .menu-item img { 
+      width: 120px; 
+      height: 120px; 
+      display: block; 
+      margin: 0 auto 20px; 
+      transition: transform 0.5s ease; 
+    }
+    .menu-item p { font-size: 20px; color: white; transition: color 0.5s; }
+    
+    /* الحركة عند الضغط والتحويم */
+    .menu-item:active { transform: rotate(360deg); }
+    .menu-item:hover img { transform: translateY(-20px); }
+    .menu-item:hover { border-color: lightblue; }
+    
+    .menu-item a { text-decoration: none; display: block; }
+
+    /* --- الدعاية في الأعلى --- */
+    .ad-box {
+      position: absolute; 
+      top: 20px; 
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      border: 1px solid lightblue;
+    }
+    #ad-left { left: 20px; }
+    #ad-right { right: 20px; }
+
+    /* --- قسم لماذا نحن --- */
+    .why-us {
+      margin-top: 50px; 
+      background: rgba(0,0,0,0.7);
+      padding: 25px;
+      border-radius: 12px;
+      width: 60%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="main-title"><a href="001.html" target="_self">Satellite Archaeology</a></h1>
+
+  <div class="menu">
+    <div class="menu-item">
+      <a href="data-analysis.html" target="_self">
+        <img src="data-analysis.png" alt="تحليل">
+        <p>تحليل البيانات</p>
+      </a>
+    </div>
+    <div class="menu-item">
+      <a href="site-inspection.html" target="_self">
+        <img src="site-inspection.png" alt="فحص">
+        <p>طلب فحص موقع</p>
+      </a>
+    </div>
+    <div class="menu-item">
+      <a href="services.html" target="_self">
+        <img src="services.png" alt="خدمات">
+        <p>الخدمات المقدمة</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-box" id="ad-left">
+    <h3>تقنياتنا</h3>
+    <p>استخدام رادار الفتحة الاصطناعية (SAR).</p>
+  </div>
+
+  <div class="ad-box" id="ad-right">
+    <h3>مجالات عملنا</h3>
+    <p>تقنيات الليدار (LiDAR) ثلاثية الأبعاد.</p>
+  </div>
+
+  <div class="why-us">
+    <h3>لماذا نحن؟</h3>
+    <p>لأننا نمزج بين أحدث تقنيات الفضاء الأثري مع خبرة طويلة في التحليل المكاني.</p>
+  </div>
+
+</body>
+</html>
