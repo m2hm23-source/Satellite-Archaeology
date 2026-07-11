@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Satellite Archaeology</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      margin: 0;
+      min-height: 100vh; 
+      background: url('moving-bg.gif') no-repeat center center fixed; 
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    /* اسم الموقع */
+    .site-name a {
+      font-size: 65px;
+      font-weight: bold;
+      color: #00aaff;
+      text-decoration: none;
+      animation: neon 2s ease-in-out infinite alternate;
+    }
+    @keyframes neon {
+      from { text-shadow: 0 0 20px #00aaff, 0 0 40px #33ccff; }
+      to { text-shadow: 0 0 40px #66ffff, 0 0 60px #00aaff; }
+    }
+
+    /* العنوان */
+    .main-title {
+      font-size: 45px;
+      margin: 20px 0;
+      text-shadow: 0 0 15px lightblue;
+    }
+
+    /* الحاوية للمربعات + النموذج */
+    .top-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+
+    /* المربعات */
+    .square-box {
+      width: 280px;
+      min-height: 280px;
+      border-radius: 12px;
+      border: 3px solid lightblue;
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: right;
+    }
+    .square-box h3 {
+      color: lightblue;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .square-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .square-box ul li {
+      margin: 8px 0;
+      font-weight: normal;
+      color: #ddd;
+    }
+
+    /* النموذج */
+    .form-container {
+      background: rgba(0,0,0,0.7); 
+      padding: 30px;
+      border-radius: 15px;
+      width: 350px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      border: 2px solid #00aaff;
+    }
+    .input-group { margin-bottom: 20px; text-align: right; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    input, textarea { 
+      width: 100%; 
+      padding: 10px; 
+      border: 1px solid #333; 
+      border-radius: 5px; 
+      background: rgba(255, 255, 255, 0.9); 
+      box-sizing: border-box;
+    }
+    button { 
+      width: 100%; 
+      padding: 12px; 
+      background: #00aaff; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+      border-radius: 5px; 
+      font-size: 16px;
+      font-weight: bold;
+    }
+    button:hover { background: #0077cc; }
+
+    /* قسم لماذا نحن */
+    .why-us {
+      margin-top: 20px;
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      border-radius: 12px;
+      width: 80%;
+      text-align: center;
+      font-size: 20px;
+    }
+    .why-us h3 { color: lightblue; font-size: 26px; }
+  </style>
+</head>
+<body>
+  <!-- اسم الموقع -->
+  <div class="site-name">
+    <a href="001.html">Satellite Archaeology</a>
+  </div>
+
+  <!-- العنوان -->
+  <h1 class="main-title">الدعم الفني</h1>
+
+  <!-- المربعات + النموذج -->
+  <div class="top-section">
+    <!-- مربع يمين: خطوات المعالجة -->
+    <div class="square-box">
+      <h3>خطوات المعالجة</h3>
+      <ul>
+        <li>جمع البيانات: الحصول على الصور والقياسات الخام</li>
+        <li>دمج البيانات: توحيد المصادر المختلفة في شبكة واحدة</li>
+        <li>معالجة البيانات: تنظيف وتحسين القيم باستخدام الفلاتر</li>
+        <li>تحليل البيانات: استخراج الأنماط والعلاقات المهمة</li>
+        <li>عرض النتائج: تحويل التحليل إلى خرائط ورسوم بيانية</li>
+        <li>النتائج النهائية: مجسم 3D + توقيع 2D</li>
+      </ul>
+    </div>
+
+    <!-- النموذج في النص -->
+    <div class="form-container">
+      <form action="https://formspree.io/f/xbdvbavv" method="POST" enctype="multipart/form-data">
+        <div class="input-group">
+          <label>رقم الفحص:</label>
+          <input type="tel" name="phone" required>
+        </div>
+        <div class="input-group">
+          <label>إحداثيات موضع الاستفسار:</label>
+          <input type="text" name="coords" required>
+        </div>
+        <div class="input-group">
+          <label>الاستفسار:</label>
+          <textarea name="notes"></textarea>
+        </div>
+        <div class="input-group">
+          <label>صورة الجزء المراد توضيحه:</label>
+          <input type="file" name="mapImage" accept="image/*">
+        </div>
+        <button type="submit">إرسال الطلب عبر الإيميل</button>
+      </form>
+    </div>
+
+    <!-- مربع شمال: المصطلحات العلمية -->
+    <div class="square-box">
+      <h3>المصطلحات العلمية</h3>
+      <ul>
+        <li>Satellite Archaeology: استخدام الأقمار الصناعية لدراسة المواقع الأثرية</li>
+        <li>Geophysical Data Processing: معالجة البيانات الجيوفيزيائية</li>
+        <li>Underground Radar Survey: مسح راداري للكشف تحت الأرض</li>
+        <li>SAR: رادار الفتحة الاصطناعية لرؤية دقيقة</li>
+        <li>GPR: رادار اختراق الأرض للكشف عن البنية</li>
+        <li>Remote Sensing: الاستشعار عن بعد باستخدام الأقمار</li>
+        <li>GIS & Terrain Modeling: نمذجة التضاريس باستخدام GIS</li>
+        <li>Digital Archaeology: علم الآثار الرقمي</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- قسم لماذا نحن -->
+  <div class="why-us">
+    <h3>لماذا نحن؟</h3>
+    <p>لأننا نمزج بين أحدث تقنيات الفضاء الأثري (SAR، LiDAR، GIS) مع خبرة طويلة في التحليل المكاني والهندسة العكسية.</p>
+    <p>نقدم حلول دقيقة وموثوقة للباحثين والمؤسسات، مع دعم فني مستمر وخدمة عملاء متميزة.</p>
+  </div>
+</body>
+</html>
