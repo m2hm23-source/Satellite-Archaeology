@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,4 +116,123 @@
     </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- الوسوم الأساسية للمعاينة -->
+    <meta property="og:title" content="Satellite Archaeology" />
+    <meta property="og:description" content="وصف مختصر لموقعك وما يقدمه من خدمات هندسية" />
+    <meta property="og:url" content="https://satellite-archaeology-5078d.firebaseapp.com/" />
+    
+    <!-- رابط الصورة التي تريدها أن تظهر (استبدل الرابط برابط صورتك الفعلية) -->
+    <meta property="og:image" content="https://satellite-archaeology-5078d.firebaseapp.com/images/preview.jpg" />
+    
+    <!-- تحديد حجم الصورة المفضل للمنصات (يفضل أبعاد 1200×630 بكسل) -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite Archaeology</title>
+    <style>
+        /* جعل الخلفية سوداء قاتمة وتثبيت الصورة في المنتصف كجزء من الخلفية */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+            overflow: hidden;
+            
+            /* خلفية سوداء مطلقة */
+            background-color: #000000; 
+            
+            /* الصورة كخلفية ثابتة في السنتر */
+            background-image: url('moving-bg.gif'); /* استبدل الاسم بملفك الفعلي */
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto;
+        }
+
+        /* حاوية ثابتة في مركز الشاشة بالظبط لمنع النصوص من الحركة العشوائية */
+        .center-wrapper {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            z-index: 2;
+        }
+
+        /* الجملة الرئيسية الكبيرة */
+        .main-title {
+            font-size: 5rem;
+            font-weight: normal;
+            color: transparent;
+            -webkit-text-stroke: 1.5px #5b9bd5;
+            text-shadow: 2px 2px 4px rgba(91, 155, 213, 0.4);
+            margin: 0;
+            margin-bottom: 20px;
+            
+            /* الأنيميشن يبدأ من نفس نقطة السنتر بالظبط */
+            transform-origin: center center;
+            animation: zoomFromCenter 2s ease-out forwards;
+        }
+
+        /* النص الصغير (2026) */
+        .sub-title {
+            font-size: 2rem;
+            color: #5b9bd5;
+            margin: 0;
+            opacity: 0;
+            
+            /* يظهر في مكانه بالأسفل بسلاسة بعد ثانيتين */
+            animation: fadeInSub 1.5s ease-out 2s forwards;
+        }
+
+        /* أنيميشن الخروج من نقطة الصفر في السنتر بالظبط */
+        @keyframes zoomFromCenter {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* أنيميشن ظهور التاريخ بنعومة */
+        @keyframes fadeInSub {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center-wrapper">
+        <h1 class="main-title">Satellite Archaeology</h1>
+        
+        <div class="sub-title">2026</div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "001.html"; 
+        }, 5000);
+    </script>
+
+</body>
+>>>>>>> 2c61115 (Initial start from scratch)
 </html>

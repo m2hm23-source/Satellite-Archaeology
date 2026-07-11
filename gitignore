@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # إخفاء ملفات إعدادات Firebase الحساسة
 firebase-config.js
 
@@ -6,4 +7,14 @@ node_modules/
 .env
 
 # إخفاء ملفات النظام المزعجة
+=======
+# إخفاء ملفات إعدادات Firebase الحساسة
+firebase-config.js
+
+# إخفاء مجلدات البيئة المحلية
+node_modules/
+.env
+
+# إخفاء ملفات النظام المزعجة
+>>>>>>> 2c61115 (Initial start from scratch)
 .DS_Store
